@@ -10,10 +10,11 @@
     <style>
         ::-webkit-scrollbar {
             width: 10px;
+            background-color: #1d2b34;
         }
 
         ::-webkit-scrollbar-thumb {
-            background-color:#1d2b34;
+            background-color: white;
         }
     </style>
 </head>

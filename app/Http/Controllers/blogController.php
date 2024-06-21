@@ -13,10 +13,6 @@ class blogController extends Controller
         return view("blogViews.index");
     }
 
-    public function createBlogButton(){
-        return view("blogViews.login");
-    }
-
     public function signup(){
         return view("blogViews.signup");
     }

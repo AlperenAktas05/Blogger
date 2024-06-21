@@ -13,13 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get("/index",[\App\Http\Controllers\blogController::class, "index"]) ->name("routeIndex");
-
-Route::post("/createBlog", [\App\Http\Controllers\blogController::class, "createBlogButton"])->name("routeCreateBlogButton");
+Route::get("/",[\App\Http\Controllers\blogController::class, "index"]) ->name("routeIndex");
 
 Route::get("/signup", [\App\Http\Controllers\blogController::class, "signup"]) ->name("routeSignup");
 

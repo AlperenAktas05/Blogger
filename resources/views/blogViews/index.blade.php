@@ -10,10 +10,11 @@
         <style>
             ::-webkit-scrollbar {
                 width: 10px;
+                background-color: #1d2b34;
             }
 
             ::-webkit-scrollbar-thumb {
-                background-color: #1d2b34;
+                background-color: white;
             }
         </style>
     </head>
@@ -37,10 +38,7 @@
             <div class="col-12 text-center p-5">
                 <h1 class="text-light mb-3">Tutkularınızı kendi tarzınızla paylaşın</h1>
                 <h5 class="text-light mb-5">Kolayca benzersiz, göz alıcı bir blog hazırlayın.</h5>
-                <form action="{{route("routeCreateBlogButton")}}" method="post">
-                    @csrf
-                    <button type="submit" class="btn text-light p-3" style="background-color: #ff8000;">BLOG'unuzu Oluşturun</button>
-                </form>
+                <a href="{{route("routeLogin")}}" class="btn text-light p-3" style="background-color: #ff8000;">BLOG'unuzu Oluşturun</a>
             </div>
 
             <div class="col-12 text-center">
@@ -144,4 +142,3 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     </body>
 </html>
-
